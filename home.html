@@ -1,0 +1,145 @@
+<html>
+<head>
+    <title>
+        Home
+    </title>
+</head>
+
+<style>
+    nav{
+        padding: 15px;
+        background-color: transparent;
+        padding-left: 850px;
+    }
+    nav a{
+        color:rgb(0, 255, 21);
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-style:normal;
+    }
+
+    .dropdown, .dropdown1, .dropdown2, .dropdown3{
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content,
+    .dropdown-content1,
+    .dropdown-content2,
+    .dropdown-content3{
+        display: none;
+        position: absolute;
+        background-color: #111;
+        min-width: 180px;
+        right: 0;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .dropdown-content a,
+    .dropdown-content1 a,
+    .dropdown-content2 a,
+    .dropdown-content3 a{
+        display: block;
+        padding: 10px;
+        color: aqua;
+        margin: 0;
+    }
+
+    .dropdown-content a:hover,
+    .dropdown-content1 a:hover,
+    .dropdown-content2 a:hover,
+    .dropdown-content3 a:hover{
+        background-color: #333;
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .dropdown1:hover .dropdown-content1{
+        display: block;
+    }
+    .dropdown2:hover .dropdown-content2{
+        display: block;
+    }
+    .dropdown3:hover .dropdown-content3{
+        display: block;
+    }
+
+    /* 🔹 Background changed only */
+    body{
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        font-family: Arial;
+    }
+
+    /* 🔹 Content styling */
+    .content{
+        margin-top: 120px;
+        text-align: center;
+    }
+
+    .box{
+        background: rgba(0,0,0,0.5);
+        width: 70%;
+        margin: auto;
+        padding: 30px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+
+<nav>
+
+    <div class="dropdown">
+        <a href="#">Student ▾</a>
+        <div class="dropdown-content">
+            <a href="student.html">Student Details</a>
+            <a href="addstudent.html">Add Student</a>
+        </div>
+    </div>
+
+    <div class="dropdown1">
+        <a href="#">Attendance ▾</a>
+        <div class="dropdown-content1">
+            <a href="check.html">Check Details</a>
+        </div>
+    </div>
+
+    <div class="dropdown2">
+        <a href="#">Ab ▾</a>
+        <div class="dropdown-content2">
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <div class="dropdown3">
+        <a href="#">Calls ▾</a>
+        <div class="dropdown-content3">
+            <a href="contact.html">Phone</a>
+        </div>
+    </div>
+    <a href="index.html">Logout</a>
+
+</nav>
+
+<div class="content">
+    <div class="box">
+        <h1>This is Online Student Attendance</h1>
+        <p>
+            This system helps manage student records, attendance tracking,
+            and communication in an easy and efficient way.
+        </p>
+
+        <p>
+            ✔ View student details<br>
+            ✔ Mark and check attendance<br>
+            ✔ Secure and easy access<br>
+            ✔ Designed for academic institutions
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
