@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Report</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f9;display:flex}
+.sidebar{width:220px;background:#2f4bb6;color:#fff;min-height:100vh;padding:20px}
+.sidebar h2{margin-bottom:30px}
+.sidebar a{display:block;color:#fff;text-decoration:none;padding:12px;border-radius:6px;margin-bottom:8px}
+.sidebar a.active,.sidebar a:hover{background:rgba(255,255,255,0.15)}
+.main{flex:1;padding:30px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;padding:25px;border-radius:10px;text-align:center}
+.card h3{margin-bottom:10px}
+.card p{font-size:28px;font-weight:bold;color:#2f4bb6}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+<h2>🏫 School Logo</h2>
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="Take attendence.html">Attendance</a>
+<a href="class.html">Classes</a>
+<a href="Report.html" class="active">Report</a>
+<a href="Settings.html">Settings</a>
+</div>
+
+<div class="main">
+<h2>Attendance Report</h2>
+<div class="cards">
+<div class="card">
+<h3>Total Days</h3>
+<p>180</p>
+</div>
+<div class="card">
+<h3>Present Days</h3>
+<p>160</p>
+</div>
+<div class="card">
+<h3>Absent Days</h3>
+<p>20</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>

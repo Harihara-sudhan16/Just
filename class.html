@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Classes</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f9;display:flex}
+.sidebar{width:220px;background:#2f4bb6;color:#fff;min-height:100vh;padding:20px}
+.sidebar h2{margin-bottom:30px}
+.sidebar a{display:block;color:#fff;text-decoration:none;padding:12px;border-radius:6px;margin-bottom:8px}
+.sidebar a.active,.sidebar a:hover{background:rgba(255,255,255,0.15)}
+.main{flex:1;padding:30px}
+.card{background:#fff;padding:20px;border-radius:10px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px;border-bottom:1px solid #eee;text-align:left}
+th{background:#f1f3f7}
+.status{padding:6px 12px;border-radius:15px;font-size:12px;color:#fff}
+.active{background:#4caf50}
+.inactive{background:#f44336}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+<h2>🏫 School Logo</h2>
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="Take attendence.html">Attendance</a>
+<a href="class.html" class="active">Classes</a>
+<a href="report.html">Report</a>
+<a href="Settings.html">Settings</a>
+</div>
+
+<div class="main">
+<h2>Classes</h2>
+<div class="card">
+<table>
+<tr>
+<th>Class Name</th>
+<th>Section</th>
+<th>Teacher</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>Math</td>
+<td>A</td>
+<td>Mr. John</td>
+<td><span class="status active">Active</span></td>
+</tr>
+<tr>
+<td>Science</td>
+<td>B</td>
+<td>Ms. Emma</td>
+<td><span class="status inactive">Inactive</span></td>
+</tr>
+</table>
+</div>
+</div>
+
+</body>
+</html>
